@@ -525,6 +525,15 @@ nav .menu-btn,
     color: #05ecb3;
     border-radius: 5px;
 }
+.max{
+    width: 100%;
+    height:10vh;
+    font-size: 5vh;
+    align-items: center;    
+    background:linear-gradient(90deg, #4f5af3 20%, #00f7e3);
+    color: rgb(8, 8, 8);
+    text-shadow: 5px #000;
+}
 
 #contact form textarea {
     height: 150px;
@@ -560,6 +569,9 @@ nav .menu-btn,
     }
     .name h1 {
         font-size: 3rem;
+    }
+    .name .span {
+        font-size: 2rem;
     }
     .name .details {
         font-size: 1rem;
