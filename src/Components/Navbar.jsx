@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Logo from '../images/logo.jpg';
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 import Checkbox from "./Checkbox/Checkbox";
 import { Router } from "react-router";
 
