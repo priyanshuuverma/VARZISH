@@ -441,18 +441,18 @@ nav .menu-btn,
     margin-left: 0;
     width: 140px;
     height: 45px;
-    font-weight: 500;
+    font-weight: 650;
     border-radius: 10px;
     border: none;
     outline: none;
-    color: #faf5f5;
-    background-color: #070707;
+    color: #090a0a;
+    background-color: #e7e5e5;
     
 }
 
 .b1:hover {
     box-shadow: 5px 10px 30px rgba(4, 157, 177, 0.336);
-    background-color: rgb(231, 223, 223);
+    background-color: rgb(1, 204, 255);
     transition: all ease 0.3s;
     color: #050404;
 }
