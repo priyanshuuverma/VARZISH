@@ -1,5 +1,9 @@
 /* Global styles */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+html {
+    scroll-behavior: smooth;
+    
+}
 
 body {
     margin: 0px;
@@ -100,6 +104,23 @@ nav ul {
     color: #ffffff;
     box-shadow: 5px 10px 30px rgba(64, 84, 198, 0.411);
     transition: all ease 0.2s;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    transition: transform 0.3s ease-out;
+}
+
+/* Apply a bouncy effect on hover */
+a:hover {
+    transform: translateY(-5px); /* Move up a little */
+}
+
+/* Optional: Adding a bounce effect using cubic-bezier */
+a {
+    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Bouncy cubic-bezier curve */
 }
 
 /* Styling for navigation links */
