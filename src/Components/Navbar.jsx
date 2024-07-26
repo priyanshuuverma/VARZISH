@@ -3,6 +3,7 @@ import Logo from '../images/logo.jpg';
 // import { Link } from "react-scroll";
 import Checkbox from "./Checkbox/Checkbox";
 import { Router } from "react-router";
+import { Link } from "react-router-dom";
 
 function Navbar() {
     const [nav, setNav] = useState(false);
