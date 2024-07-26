@@ -43,7 +43,7 @@ input {
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('E:\projectsfinal\varzish\src\images\bg.jpg'); /* Background image path */
+    background-image: url('./images/bg.jpg'); /* Background image path */
     position: relative;
     z-index: 0;
 }
@@ -306,7 +306,7 @@ nav .menu-btn,
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    background-image: url('E:\projectsfinal\varzish\src\images\offer.jpg');
+    background-image: url('./images/offer.jpg');
 }
 #presentation::before {
    
