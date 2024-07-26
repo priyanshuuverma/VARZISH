@@ -10,7 +10,7 @@ function Header() {
                 <h1>
                     <span>
                         FITNESS
-                    </span></br>
+                    </span><br/>
                     WITH US
                 </h1>
                 <p className="details">Find Your Trainer And Gym In One Platform</p>
