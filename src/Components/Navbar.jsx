@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom"; // Only import Link
 import Logo from '../images/logo.jpg';
-// import { Link } from "react-scroll";
 import Checkbox from "./Checkbox/Checkbox";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Link } from "react-router-dom";
 
 function Navbar() {
     const [nav, setNav] = useState(false);
@@ -31,28 +29,21 @@ function Navbar() {
 
     return (
         <nav className={nav ? "nav active" : "nav"}>
-            <Link to="main" className="logo" smooth={true} duration={1000}>
+            <Link to="/main" className="logo">
                 <img src={Logo} alt="Logo" />
             </Link>
             <Checkbox />
-            <input type="Checkbox" id="menu-btn" className="menu-btn" />
-                  <label className="menu-icon" htmlFor="menu-btn">
-                    <span className="nav-icon">
-
-                    </span>
-                    </label>    
-                    <ul className="menu">
-                        <li><Link to="main" smooth={true} duration={1000} >Header</Link></li>
-                        <li><Link to="features"smooth={true} duration={1000}>FEATURES</Link></li>
-                        <li><Link to="presentation"smooth={true} duration={1000}>OFFERS</Link></li>
-                        <li><Link to="about"smooth={true} duration={1000}>ABOUT</Link></li>
-                        <li><Link to="contact"smooth={true} duration={1000}>Contact</Link></li>
-
-                        
-                    </ul>  
-            
-
-            
+            <input type="checkbox" id="menu-btn" className="menu-btn" />
+            <label className="menu-icon" htmlFor="menu-btn">
+                <span className="nav-icon"></span>
+            </label>
+            <ul className="menu">
+                <li><Link to="/main">Header</Link></li>
+                <li><Link to="/features">FEATURES</Link></li>
+                <li><Link to="/presentation">OFFERS</Link></li>
+                <li><Link to="/about">ABOUT</Link></li>
+                <li><Link to="/contact">Contact</Link></li>
+            </ul>
         </nav>
     );
 }
