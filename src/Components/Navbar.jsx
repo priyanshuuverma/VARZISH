@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Logo from '../images/logo.jpg';
 // import { Link } from "react-scroll";
 import Checkbox from "./Checkbox/Checkbox";
-import { Router } from "react-router";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Link } from "react-router-dom";
 
 function Navbar() {
