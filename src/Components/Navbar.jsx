@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom"; // Only import Link
+import { Link as ScrollLink } from 'react-scroll'; // Import ScrollLink
 import Logo from '../images/logo.jpg';
 import Checkbox from "./Checkbox/Checkbox";
 
@@ -21,28 +21,27 @@ function Navbar() {
 
         window.addEventListener('scroll', handleScroll);
 
-        // Clean up the event listener on component unmount
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []); // Empty dependency array ensures this effect runs only once
+    }, []);
 
     return (
         <nav className={nav ? "nav active" : "nav"}>
-            <Link to="/main" className="logo">
+            <ScrollLink to="main" smooth={true} duration={1000} className="logo">
                 <img src={Logo} alt="Logo" />
-            </Link>
+            </ScrollLink>
             <Checkbox />
             <input type="checkbox" id="menu-btn" className="menu-btn" />
             <label className="menu-icon" htmlFor="menu-btn">
                 <span className="nav-icon"></span>
             </label>
             <ul className="menu">
-                <li><Link to="/main">Header</Link></li>
-                <li><Link to="/features">FEATURES</Link></li>
-                <li><Link to="/presentation">OFFERS</Link></li>
-                <li><Link to="/about">ABOUT</Link></li>
-                <li><Link to="/contact">Contact</Link></li>
+                <li><ScrollLink to="main" smooth={true} duration={1000}>Header</ScrollLink></li>
+                <li><ScrollLink to="features" smooth={true} duration={1000}>FEATURES</ScrollLink></li>
+                <li><ScrollLink to="presentation" smooth={true} duration={1000}>OFFERS</ScrollLink></li>
+                <li><ScrollLink to="about" smooth={true} duration={1000}>ABOUT</ScrollLink></li>
+                <li><ScrollLink to="contact" smooth={true} duration={1000}>Contact</ScrollLink></li>
             </ul>
         </nav>
     );
