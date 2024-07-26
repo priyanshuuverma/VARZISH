@@ -5,7 +5,7 @@ import Feature from './Components/Feature';
 import Offer from './Components/Offer';
 import About from './Components/About';
 import Contact from './Components/Contact';
-import { BrowserRouter as Router} from 'react-router-dom';
+import {Router} from 'react-router-dom';
 
 function App() {
   return (
