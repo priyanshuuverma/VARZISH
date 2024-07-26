@@ -15,8 +15,8 @@ function Contact ()
                 
             </form>
                 <div className="max">
-                <h2 align="center">  PriyanshuVerma <br/><Checkbox align="center"/></h2>
-                    <h3>Tap Here And Verify Him  </h3>
+                <h2 align="center">  FRONTEND PROJECT </h2>
+                    <h3>PRIYANSHU VERMA   </h3>
                     
                     
                 </div>
