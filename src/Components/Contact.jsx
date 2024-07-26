@@ -1,4 +1,5 @@
 import React from "react";
+import Checkbox from "./Checkbox/Checkbox";
 
 
 function Contact ()
@@ -13,7 +14,12 @@ function Contact ()
                 <input type="submit" value="send" />
                 
             </form>
-
+                <div className="max">
+                <h2 align="center">  PriyanshuVerma <br/><Checkbox align="center"/></h2>
+                    <h3>Tap Here And Verify Him  </h3>
+                    
+                    
+                </div>
         </div>
     )
 }
