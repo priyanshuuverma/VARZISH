@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Link as ScrollLink } from 'react-scroll'; // Import ScrollLink
 import Logo from '../images/logo.jpg';
 import Checkbox from "./Checkbox/Checkbox";
 
@@ -28,20 +27,20 @@ function Navbar() {
 
     return (
         <nav className={nav ? "nav active" : "nav"}>
-            <ScrollLink to="main" smooth={true} duration={1000} className="logo">
+            <a href="#main" className="logo">
                 <img src={Logo} alt="Logo" />
-            </ScrollLink>
+            </a>
             <Checkbox />
             <input type="checkbox" id="menu-btn" className="menu-btn" />
             <label className="menu-icon" htmlFor="menu-btn">
                 <span className="nav-icon"></span>
             </label>
             <ul className="menu">
-                <li><ScrollLink to="main" smooth={true} duration={1000}>Header</ScrollLink></li>
-                <li><ScrollLink to="features" smooth={true} duration={1000}>FEATURES</ScrollLink></li>
-                <li><ScrollLink to="presentation" smooth={true} duration={1000}>OFFERS</ScrollLink></li>
-                <li><ScrollLink to="about" smooth={true} duration={1000}>ABOUT</ScrollLink></li>
-                <li><ScrollLink to="contact" smooth={true} duration={1000}>Contact</ScrollLink></li>
+                <li><a href="#main">Header</a></li>
+                <li><a href="#features">FEATURES</a></li>
+                <li><a href="#presentation">OFFERS</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     );
