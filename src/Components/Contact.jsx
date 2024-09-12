@@ -16,7 +16,7 @@ function Contact ()
             </form>
                 <div className="max">
                 <h2 align="center">  FRONTEND PROJECT </h2>
-                    <h3>PRIYANSHU VERMA   </h3>
+                    
                     
                     
                 </div>
